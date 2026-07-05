@@ -1,0 +1,89 @@
+{
+  "pareto_v3": {
+    "percentile_99_9": 32.53114318847656, 
+    "sigma_max": 43.04867172241211, 
+    "percentile_99_0": 28.093080520629883, 
+    "percentile_95_0": 25.497514724731445, 
+    "percentile_99_5": 29.301923751831055, 
+    "delta_um": [
+      2.0, 
+      2.0, 
+      2.0
+    ], 
+    "alpha": [
+      0.093, 
+      0.114, 
+      0.173, 
+      0.62
+    ], 
+    "n_mises_points": 811160, 
+    "case_summary": {
+      "sigma_max": 43.04867172241211, 
+      "E_eff": 13806.180981663054, 
+      "mesh_volume": 205.65310249290624, 
+      "rho_rel": 0.20565310249290625, 
+      "percentile": 99.9, 
+      "n_mises_points": 811160, 
+      "sigma_d": 32.53114318847656
+    }, 
+    "method": "Last frame S.getSubset(position=ELEMENT_NODAL), unaveraged value.mises, sorted-index percentile int(n*pct/100)"
+  }, 
+  "n80_alpha025_050_010_015_delta222um": {
+    "percentile_99_9": 56.44310760498047, 
+    "sigma_max": 84.66053771972656, 
+    "percentile_99_0": 44.74814224243164, 
+    "percentile_95_0": 33.94645690917969, 
+    "percentile_99_5": 48.879920959472656, 
+    "delta_um": [
+      2.0, 
+      2.0, 
+      2.0
+    ], 
+    "alpha": [
+      0.25, 
+      0.5, 
+      0.1, 
+      0.15
+    ], 
+    "n_mises_points": 1440456, 
+    "case_summary": {
+      "sigma_max": 84.66053771972656, 
+      "E_eff": 22095.299785396008, 
+      "mesh_volume": 365.19829060175766, 
+      "rho_rel": 0.3651982906017577, 
+      "percentile": 99.9, 
+      "n_mises_points": 1440456, 
+      "sigma_d": 56.44310760498047
+    }, 
+    "method": "Last frame S.getSubset(position=ELEMENT_NODAL), unaveraged value.mises, sorted-index percentile int(n*pct/100)"
+  }, 
+  "pareto_uniaxial_x": {
+    "percentile_99_9": 15.884841918945312, 
+    "sigma_max": 23.614395141601562, 
+    "percentile_99_0": 14.232245445251465, 
+    "percentile_95_0": 12.89620304107666, 
+    "percentile_99_5": 14.784113883972168, 
+    "delta_um": [
+      2.0, 
+      0.0, 
+      0.0
+    ], 
+    "alpha": [
+      0.075, 
+      0.083, 
+      0.825, 
+      0.017
+    ], 
+    "n_mises_points": 581192, 
+    "case_summary": {
+      "sigma_max": 23.614395141601562, 
+      "E_eff": 5083.971058530733, 
+      "mesh_volume": 147.34939832345918, 
+      "rho_rel": 0.1473493983234592, 
+      "percentile": 99.9, 
+      "n_mises_points": 581192, 
+      "sigma_d": 15.884841918945312
+    }, 
+    "method": "Last frame S.getSubset(position=ELEMENT_NODAL), unaveraged value.mises, sorted-index percentile int(n*pct/100)"
+  }
+}

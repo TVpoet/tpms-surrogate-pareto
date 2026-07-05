@@ -1,0 +1,143 @@
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# === IDE / 编辑器私人配置 ===
+.vscode/
+.cursor/
+.trae/
+.claude/
+.idea/
+
+# === Abaqus 中间产物（防止以后跑 FEM 时再次污染仓库）===
+*.odb
+*.lck
+*.jnl
+*.rpy
+*.rpy.*
+*.com
+*.sim
+*.sta
+*.msg
+*.prt
+*.stt
+*.cae
+*.023
+*.abq
+*.inp
+*.mdl
+*.simdir/
+abaqus.rpy*
+abaqus_test_log.txt
+
+# === FEM 原始场数据（体积大，可由 ODB 重新提取，不入库）===
+fem_node_stress.csv
+fem_elements.csv
+fem_nodes.csv
+
+# === 日志（运行产物，全部不入库）===
+*.log
+
+# === 中间产物（重新跑脚本可生成）===
+scripts/_pareto_picks.json
+diagrams/basis_functions_3d.svg
+
+# === IDE / Copilot 导出 ===
+copilot_exports/
+
+# === 操作系统 ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === 论文中间稿（只留 v4）===
+paper_draft_v[0-9]*.docx
+paper_draft_v[0-3]*.md
+paper_outline_*.md
+cursor_*.md
+
+# === Claude Code 项目笔记（含投稿策略等私人内容，本地保留）===
+CLAUDE.md
+
+# ============================================================
+# === 开源补充：references / 手稿 / 旧产物 / 归档 / 大场数据 ===
+# ============================================================
+
+# 版权文献 PDF（不可随仓库分发）
+references/
+
+# 文献对标验证材料（本地保留，不随开源主仓库发布）
+validation_literature/
+
+# 手稿草稿（本地保留，不开源）
+manuscript_drafts/
+
+# Abaqus .dat（补漏；.odb/.inp 等已在上面）
+*.dat
+
+# 大场数据（可由 odb 重新提取）；保留 Fig.2 用的 mises_final_frame.csv
+outputs/**/mises_last_frame_plastic.csv
+
+# 旧模型 + 孤儿/临时产物（保留新模型 outputs/surrogate_model/*.pth 供复现）
+outputs/surrogate_model_first2000/
+outputs/doc_review/
+outputs/docx_render_table2_update/
+outputs/scan_delta_dominance.json
+outputs/table6_data.json
+outputs/surrogate_model/pareto_dirichlet_*.png
+
+# 补充对比/作图输出（本地保留，不随开源主仓库发布）
+outputs/ashby_sweep/
+outputs/fem_figure_case/
+outputs/figure_indicators_illustration/
+outputs/stress_field_compare/
+outputs/uniaxial_x_pareto/
+outputs/pareto_stress_strain/*__f*/
+outputs/pareto_stress_strain/Biaxial-XY__P*/
+outputs/pareto_stress_strain/Triaxial-1-1-2__P*/
+outputs/pareto_stress_strain/Triaxial-1-2-2__P*/
+outputs/pareto_stress_strain/Uniaxial-X__*/
+outputs/pareto_stress_strain/curve_summary.csv
+outputs/pareto_stress_strain/pure_baselines_run_summary.json
+outputs/pareto_stress_strain/run_summary.json
+outputs/pareto_stress_strain/uniaxial_x_run_summary.json
+
+# 补充分析 / 本地作图 / 维护脚本（不随开源主仓库发布）
+scripts/_new_loads_manifest.json
+scripts/_new_loads_pure_fem.json
+scripts/add_subplot_labels.py
+scripts/batch_extract_summary.py
+scripts/cleanup_cases.py
+scripts/corner_eeff.py
+scripts/corner_young.py
+scripts/pareto_stress_strain_utils.py
+scripts/plot_uniaxial_x_pareto_vs_baselines.py
+scripts/run_pareto_stress_strain_dirichlet.py
+scripts/run_pure_baseline_stress_strain.py
+scripts/run_uniaxial_x_stress_strain.py
+scripts/run_ashby_sweep.py
+scripts/run_densify.py
+scripts/run_full_stress_strain.py
+scripts/run_stress_field_compare.py
+scripts/run_validation_sweep.py
+scripts/supplement_sampling.py
+
+# 归档目录（废弃代码/图，开源不带）
+**/_archive/
+
+# docx 解析临时产物 / 私人 PDF 工具
+_docx_images_tmp/
+_docx_dump.txt
+_docx_tables.txt
+tests/utils/
+
+# 画图脚本与成图结果（不在开源范围：仅开源神经网络/Pareto 方法与数据；本地保留）
+diagrams/
+
+# 节点应力 CDF / 直方图专题（bccz + TPMS 补充分析，本地保留，不随开源主仓库发布）
+outputs/node_stress_cdf/
+scripts/run_cdf_strain_0p3pct.py
