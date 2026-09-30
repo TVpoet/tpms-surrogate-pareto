@@ -1,0 +1,129 @@
+{
+  "created_at": "2026-09-02T13:53:12+08:00",
+  "config": {
+    "n_candidates": 5000000,
+    "runs": 5,
+    "batch_size": 200000,
+    "warmup_candidates": 200000,
+    "seed": 43,
+    "delta_um": [
+      2.0,
+      2.0,
+      0.0
+    ],
+    "delta_m": [
+      2e-06,
+      2e-06,
+      0.0
+    ],
+    "surrogate_path": "D:\\python_files\\TPMS\\outputs\\surrogate_model\\best_model.pth",
+    "density_path": "D:\\python_files\\TPMS\\outputs\\surrogate_model\\density_model.pth",
+    "timing_scope_included": [
+      "Dirichlet candidate generation",
+      "mechanical-response network prediction",
+      "density-network prediction",
+      "feasibility filtering",
+      "specific-modulus calculation",
+      "non-dominated sorting"
+    ],
+    "timing_scope_excluded": [
+      "model loading",
+      "plotting",
+      "result-file writing"
+    ]
+  },
+  "hardware": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cpu": "AMD Ryzen 9 9950X 16-Core Processor",
+    "physical_cpu_cores": 16,
+    "logical_cpu_cores": 32,
+    "device": "cuda",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4070 SUPER",
+    "gpu_memory_gib": 11.99365234375,
+    "python": "3.10.19",
+    "numpy": "2.2.5",
+    "pytorch": "2.7.0",
+    "cuda_runtime": null
+  },
+  "summary": {
+    "mean_seconds": 2.961794559999544,
+    "median_seconds": 2.976902499998687,
+    "std_seconds": 0.0397642262930292,
+    "minimum_seconds": 2.8915206999990914,
+    "maximum_seconds": 2.9861476000005496,
+    "p95_seconds": 2.985702320000564
+  },
+  "runs": [
+    {
+      "run": 1,
+      "seed": 43,
+      "n_candidates": 5000000,
+      "n_valid": 5000000,
+      "n_pareto": 806,
+      "sampling_seconds": 0.11158969999814872,
+      "dual_network_inference_seconds": 0.7494294000025548,
+      "filtering_seconds": 0.08012180000150693,
+      "pareto_sorting_seconds": 2.0427712999990035,
+      "phase_sum_seconds": 2.983912200001214,
+      "total_seconds": 2.9839212000006228,
+      "unattributed_seconds": 8.999999408842996e-06
+    },
+    {
+      "run": 2,
+      "seed": 43,
+      "n_candidates": 5000000,
+      "n_valid": 5000000,
+      "n_pareto": 806,
+      "sampling_seconds": 0.10814079999909154,
+      "dual_network_inference_seconds": 0.7471759999971255,
+      "filtering_seconds": 0.08595710000008694,
+      "pareto_sorting_seconds": 1.9502386999993178,
+      "phase_sum_seconds": 2.8915125999956217,
+      "total_seconds": 2.8915206999990914,
+      "unattributed_seconds": 8.100003469735384e-06
+    },
+    {
+      "run": 3,
+      "seed": 43,
+      "n_candidates": 5000000,
+      "n_valid": 5000000,
+      "n_pareto": 806,
+      "sampling_seconds": 0.11179389999961131,
+      "dual_network_inference_seconds": 0.7562973000021884,
+      "filtering_seconds": 0.09217780000108178,
+      "pareto_sorting_seconds": 2.0166251999980886,
+      "phase_sum_seconds": 2.97689420000097,
+      "total_seconds": 2.976902499998687,
+      "unattributed_seconds": 8.299997716676444e-06
+    },
+    {
+      "run": 4,
+      "seed": 43,
+      "n_candidates": 5000000,
+      "n_valid": 5000000,
+      "n_pareto": 806,
+      "sampling_seconds": 0.10963489999994636,
+      "dual_network_inference_seconds": 0.7488206000016362,
+      "filtering_seconds": 0.08528060000026016,
+      "pareto_sorting_seconds": 2.042403399998875,
+      "phase_sum_seconds": 2.986139500000718,
+      "total_seconds": 2.9861476000005496,
+      "unattributed_seconds": 8.099999831756577e-06
+    },
+    {
+      "run": 5,
+      "seed": 43,
+      "n_candidates": 5000000,
+      "n_valid": 5000000,
+      "n_pareto": 806,
+      "sampling_seconds": 0.11028339999757009,
+      "dual_network_inference_seconds": 0.7374946999989334,
+      "filtering_seconds": 0.08024269999805256,
+      "pareto_sorting_seconds": 2.04245080000328,
+      "phase_sum_seconds": 2.970471599997836,
+      "total_seconds": 2.970480799998768,
+      "unattributed_seconds": 9.20000093174167e-06
+    }
+  ]
+}

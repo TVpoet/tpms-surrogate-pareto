@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-08-30T20:21:17.459469+08:00",
+  "surrogate_path": "D:\\python_files\\TPMS\\outputs\\surrogate_model\\best_model.pth",
+  "density_path": "D:\\python_files\\TPMS\\outputs\\surrogate_model\\density_model.pth",
+  "sample_sizes": [
+    100000,
+    500000,
+    1000000,
+    2000000,
+    5000000
+  ],
+  "seeds": [
+    43,
+    44,
+    45
+  ],
+  "reference_seed": 43,
+  "batch_size": 200000,
+  "line_samples_per_case": 2001,
+  "local_samples_per_case": 200000,
+  "local_mix_max": 0.15,
+  "load_cases": {
+    "Biaxial-XY": [
+      1.9999999949504854e-06,
+      1.9999999949504854e-06,
+      0.0
+    ],
+    "Triaxial-1-1-2": [
+      9.999999974752427e-07,
+      9.999999974752427e-07,
+      1.9999999949504854e-06
+    ],
+    "Triaxial-1-2-2": [
+      9.999999974752427e-07,
+      1.9999999949504854e-06,
+      1.9999999949504854e-06
+    ]
+  },
+  "metrics": {
+    "front_distance": "normalized symmetric Hausdorff and mean nearest-neighbor distance",
+    "hypervolume": "2D normalized hypervolume for min sigma_hp and max E_eff/rho_rel",
+    "gap": "largest adjacent Euclidean spacing in normalized objective space"
+  },
+  "device": "cuda",
+  "torch_version": "2.7.0",
+  "elapsed_seconds": 24.885111999999936
+}

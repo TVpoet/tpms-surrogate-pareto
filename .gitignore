@@ -76,6 +76,9 @@ validation_literature/
 # 手稿草稿（本地保留，不开源）
 manuscript_drafts/
 
+# 审稿材料（本地保留，不随仓库发布）
+/TWST-D-26-03654-reviews/
+
 # Abaqus .dat（补漏；.odb/.inp 等已在上面）
 *.dat
 
@@ -91,6 +94,8 @@ outputs/table6_data.json
 outputs/surrogate_model/pareto_dirichlet_*.png
 
 # 补充对比/作图输出（本地保留，不随开源主仓库发布）
+outputs/discretization_validation/
+outputs/pareto_validation_extended/
 outputs/ashby_sweep/
 outputs/fem_figure_case/
 outputs/figure_indicators_illustration/
@@ -134,6 +139,13 @@ _docx_images_tmp/
 _docx_dump.txt
 _docx_tables.txt
 tests/utils/
+
+# 审稿检查、文稿渲染和临时试运行（不纳入版本管理）
+/.codex_tmp/
+/_docx_review/
+/outputs/qa_*
+/outputs/citation_audit_*/
+/outputs/pareto_timing_evidence_smoke/
 
 # 画图脚本与成图结果（不在开源范围：仅开源神经网络/Pareto 方法与数据；本地保留）
 diagrams/

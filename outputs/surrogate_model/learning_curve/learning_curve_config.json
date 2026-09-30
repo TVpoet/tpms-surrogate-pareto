@@ -1,0 +1,72 @@
+{
+  "created_at": "2026-08-25T15:33:50.123806+08:00",
+  "data_path": "D:\\python_files\\TPMS\\fem_data\\parameterized\\training_data.csv",
+  "data_sha256": "d04904c461c3432a2cfa3f9a8f527403e9d2ec893f14c75e14faec7fc7861228",
+  "total_fem_samples": 2000,
+  "unique_alpha_combinations": 2000,
+  "split_seed": 42,
+  "split_ratio": {
+    "training": 0.8,
+    "validation": 0.1,
+    "test": 0.09999999999999995
+  },
+  "split_counts": {
+    "mechanical": {
+      "training_pool": 1600,
+      "validation": 200,
+      "test": 200
+    },
+    "density": {
+      "training_pool": 1600,
+      "validation": 200,
+      "test": 200
+    }
+  },
+  "training_sizes": [
+    200,
+    400,
+    800,
+    1200,
+    1600
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "mechanical_config": {
+    "epochs": 1000,
+    "batch_size": 32,
+    "learning_rate": 0.0003,
+    "patience": 150,
+    "scheduler_patience": 30,
+    "scheduler_factor": 0.5,
+    "hidden_dim": 256,
+    "n_layers": 6,
+    "dropout": 0.1,
+    "weight_decay": 0.0001
+  },
+  "density_config": {
+    "epochs": 500,
+    "batch_size": 32,
+    "learning_rate": 0.0005,
+    "patience": 80,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5,
+    "hidden_dim": 128,
+    "n_layers": 4,
+    "dropout": 0.0,
+    "weight_decay": 0.0001
+  },
+  "selection_metric": {
+    "mechanical": "sum of normalized validation MSE values",
+    "density": "validation relative MSE"
+  },
+  "reported_metrics": [
+    "MAPE (%)",
+    "RMSE",
+    "R2"
+  ],
+  "device": "cuda",
+  "torch_version": "2.7.0"
+}
