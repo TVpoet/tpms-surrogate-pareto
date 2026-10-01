@@ -141,6 +141,8 @@ _docx_tables.txt
 tests/utils/
 
 # 审稿检查、文稿渲染和临时试运行（不纳入版本管理）
+/tmp/
+/TPMS全文校稿清单_*.txt
 /.codex_tmp/
 /_docx_review/
 /outputs/qa_*
